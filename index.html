@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ride | Your Smart Travel Partner</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://picsum.photos/1200/600?blur') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.cta-buttons .btn {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #e6b800;
+}
+
+/* How It Works */
+.how-it-works {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.step {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.  1);
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    display: block;
+    margin: 10px auto;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Ride</h1>
+      <p>Book your ride anytime, anywhere.</p>
+      <div class="cta-buttons">
+        <a href="uber2l.html" class="btn">Download for Android</a>
+        <a href="#" class="btn">Download for iOS</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+        
+      <div class="step">
+        <h3>📍 Choose Location</h3>
+        <p>Select your pickup and drop-off points.</p>
+      </div>
+      <div class="step">
+        <h3>🚗 Select Ride</h3>
+        <p>Pick a ride that suits your budget and style.</p>
+      </div>
+      <div class="step">
+        <h3>✅ Confirm & Go</h3>
+        <p>Confirm your booking and enjoy the journey.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+   
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ride. All rights reserved.</p>
+  </footer>
+</body>
+</html>

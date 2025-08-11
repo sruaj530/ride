@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ride | Book Your Trip</title>
+  <link rel="stylesheet" href="ride-booking.css" />
+<style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Booking Form */
+.booking-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.summary {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #0077cc;
+}
+
+button {
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .booking-form {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>Ride Booking</h1>
+    <p>Plan your trip in seconds</p>
+  </header>
+
+  <main>
+    <section class="booking-form">
+      <form>
+        <label for="pickup">Pickup Location</label>
+        <input type="text" id="pickup" placeholder="Enter pickup point" required />
+
+        <label for="drop">Drop Location</label>
+        <input type="text" id="drop" placeholder="Enter drop point" required />
+
+        <label for="ride-type">Select Ride Type</label>
+        <select id="ride-type">
+          <option>Standard</option>
+          <option>Premium</option>
+          <option>Shared</option>
+        </select>
+
+        <div class="summary">
+          <h3>Booking Summary</h3>
+          <p><strong>Pickup:</strong> Nehru Place</p>
+          <p><strong>Drop:</strong> meethapur</p>
+          <p><strong>Ride Type:</strong> Premium</p>
+          <p><strong>Estimated Fare:</strong> ₹20</p>
+        </div>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ride. Your journey, your way.</p>
+  </footer>
+</body>
+</html>
